@@ -16,14 +16,13 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity(name = "student") // required for writing JPQL in jpa (name should be same)
-//@Entity
 @Table(name = "student")
 
 public class Student {
 
     @Id
     private Long id;
-  //  @Column(name = "rollNum")
+  //@Column(name = "rollNum")
     private int rollNum;
     private String name;
 }

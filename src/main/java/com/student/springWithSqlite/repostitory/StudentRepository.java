@@ -33,8 +33,9 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
     public List<Student> findByName(String  name);
 
 
-    @Query(value = "SELECT s FROM student s where s.name =?1 ", nativeQuery = false)  //JPQL query // although write know i am not using it but i can make function and can use it in future
+    @Query(value = "SELECT s FROM student s where s.name =?1 ", nativeQuery = false)  //JPQL query // although right now i am not using it but i can make function and can use it in future
     public List<Student> findByNameJPQL(String  name);
 
-     List<Student> findByRollNum(int rollNum);//jpa automatically providing definition
+    List<Student> findByRollNum(int rollNum); //jpa automatically providing definition
+
 }
