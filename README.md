@@ -10,5 +10,5 @@ CRED operation in Spring Boot with sqlite DB
 
 
 
-To watch to Database -
-- Open the student_data.db file (present in the same folder) in DB Browser for SQLite app
+To watch the Database -
+- Open the student_data.db file (present in the same folder) in "DB Browser for SQLite" app
